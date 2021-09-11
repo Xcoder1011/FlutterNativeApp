@@ -187,16 +187,10 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/../BasicAppFlutter/.metadata",
-				"${SRCROOT}/../BasicAppFlutter/.ios/Flutter/App.framework/App",
-				"${SRCROOT}/../BasicAppFlutter/.ios/Flutter/engine/Flutter.framework/Flutter",
-				"${SRCROOT}/../BasicAppFlutter/.ios/Flutter/flutter_export_environment.sh",
-			);
 			name = "[CP-User] Run Flutter Build BasicAppFlutter Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../BasicAppFlutter/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build\n";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../BasicAppFlutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		C68C0096722D73C43FBB3F6A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

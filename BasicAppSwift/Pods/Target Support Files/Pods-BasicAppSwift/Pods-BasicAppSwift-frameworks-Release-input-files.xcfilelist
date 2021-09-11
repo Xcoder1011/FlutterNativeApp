@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-BasicAppSwift/Pods-BasicAppSwift-frameworks.sh
 ${PODS_ROOT}/../../BasicAppFlutter/.ios/Flutter/App.framework
-${PODS_ROOT}/../../BasicAppFlutter/.ios/Flutter/engine/Flutter.framework
+${BUILT_PRODUCTS_DIR}/flutter_boost/flutter_boost.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework/Flutter

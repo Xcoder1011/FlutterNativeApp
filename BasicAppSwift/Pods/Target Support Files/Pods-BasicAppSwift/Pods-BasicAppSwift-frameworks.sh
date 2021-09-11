@@ -176,11 +176,13 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/../../BasicAppFlutter/.ios/Flutter/App.framework"
-  install_framework "${PODS_ROOT}/../../BasicAppFlutter/.ios/Flutter/engine/Flutter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_boost/flutter_boost.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/../../BasicAppFlutter/.ios/Flutter/App.framework"
-  install_framework "${PODS_ROOT}/../../BasicAppFlutter/.ios/Flutter/engine/Flutter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/flutter_boost/flutter_boost.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -2,12 +2,16 @@ PODS:
   - BasicAppFlutter (0.0.1):
     - Flutter
   - Flutter (1.0.0)
+  - flutter_boost (0.0.2):
+    - Flutter
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
+    - flutter_boost
 
 DEPENDENCIES:
   - BasicAppFlutter (from `../BasicAppFlutter/.ios/Flutter`)
   - Flutter (from `../BasicAppFlutter/.ios/Flutter/engine`)
+  - flutter_boost (from `../BasicAppFlutter/.ios/.symlinks/plugins/flutter_boost/ios`)
   - FlutterPluginRegistrant (from `../BasicAppFlutter/.ios/Flutter/FlutterPluginRegistrant`)
 
 EXTERNAL SOURCES:
@@ -15,13 +19,16 @@ EXTERNAL SOURCES:
     :path: "../BasicAppFlutter/.ios/Flutter"
   Flutter:
     :path: "../BasicAppFlutter/.ios/Flutter/engine"
+  flutter_boost:
+    :path: "../BasicAppFlutter/.ios/.symlinks/plugins/flutter_boost/ios"
   FlutterPluginRegistrant:
     :path: "../BasicAppFlutter/.ios/Flutter/FlutterPluginRegistrant"
 
 SPEC CHECKSUMS:
   BasicAppFlutter: 4d5df563f36b29e39a763a1e9b3b0cc094c55495
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
+  Flutter: bdfa2e8fe0e2880a2c6a58a0b1a8675c262a07af
+  flutter_boost: 1b5f53a54ba73726829691db891e85f40b4f6494
+  FlutterPluginRegistrant: 03a06fa5f754c611bb6c96f42acf9432e8c4515d
 
 PODFILE CHECKSUM: 5c0c6157850a234891243843bcfdf67506a09d5a
 

@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.red
-        
         let button = UIButton(type: .system)
         button.setTitle("跳转", for: .normal)
         button.frame = CGRect(x:10, y:150, width:100, height:30)
