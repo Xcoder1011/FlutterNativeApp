@@ -1,0 +1,28 @@
+PODS:
+  - BasicAppFlutter (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - BasicAppFlutter (from `../BasicAppFlutter/.ios/Flutter`)
+  - Flutter (from `../BasicAppFlutter/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `../BasicAppFlutter/.ios/Flutter/FlutterPluginRegistrant`)
+
+EXTERNAL SOURCES:
+  BasicAppFlutter:
+    :path: "../BasicAppFlutter/.ios/Flutter"
+  Flutter:
+    :path: "../BasicAppFlutter/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "../BasicAppFlutter/.ios/Flutter/FlutterPluginRegistrant"
+
+SPEC CHECKSUMS:
+  BasicAppFlutter: 4d5df563f36b29e39a763a1e9b3b0cc094c55495
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
+
+PODFILE CHECKSUM: 5c0c6157850a234891243843bcfdf67506a09d5a
+
+COCOAPODS: 1.10.1
