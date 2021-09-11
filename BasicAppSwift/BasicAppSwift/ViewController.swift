@@ -7,6 +7,7 @@
 
 import UIKit
 import Flutter
+import flutter_boost
 
 class ViewController: UIViewController {
 

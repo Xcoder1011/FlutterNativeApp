@@ -7,16 +7,23 @@
 
 import UIKit
 import FlutterPluginRegistrant
+import flutter_boost
 
 @main
-// class AppDelegate: UIResponder, UIApplicationDelegate {
 class AppDelegate: FlutterAppDelegate {
     //    var window: UIWindow?
     var flutterEngine: FlutterEngine?
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        self.flutterEngine = FlutterEngine(name: "BasicAppSwift", project: nil)
-        self.flutterEngine?.run(withEntrypoint: nil)
-        GeneratedPluginRegistrant.register(with: self.flutterEngine!)
+        
+//        self.flutterEngine = FlutterEngine(name: "BasicAppSwift", project: nil)
+//        self.flutterEngine?.run(withEntrypoint: nil)
+//        GeneratedPluginRegistrant.register(with: self.flutterEngine!)
+        
+        let delegate = BoostDelegate()
+        FlutterBoost.instance()?.setup(application, delegate: delegate, callback: { engine in
+            self.flutterEngine = engine
+        })
+        
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     

@@ -12,6 +12,8 @@
 		214C6D1E26EB70F200812F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214C6D1C26EB70F200812F21 /* Main.storyboard */; };
 		214C6D2026EB70F400812F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214C6D1F26EB70F400812F21 /* Assets.xcassets */; };
 		214C6D2326EB70F400812F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214C6D2126EB70F400812F21 /* LaunchScreen.storyboard */; };
+		214C6E9126EC7C6500812F21 /* BoostDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214C6E9026EC7C6500812F21 /* BoostDelegate.swift */; };
+		214C6EA226EC82B500812F21 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 214C6EA126EC82B500812F21 /* TestViewController.m */; };
 		DFE66C34CB8319FA4AB91B63 /* Pods_BasicAppSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB00D790A390EC705A8205C /* Pods_BasicAppSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 		214C6D1F26EB70F400812F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		214C6D2226EB70F400812F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		214C6D2426EB70F400812F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214C6E9026EC7C6500812F21 /* BoostDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostDelegate.swift; sourceTree = "<group>"; };
+		214C6E9F26EC82B400812F21 /* BasicAppSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BasicAppSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		214C6EA026EC82B500812F21 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		214C6EA126EC82B500812F21 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		5CB00D790A390EC705A8205C /* Pods_BasicAppSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicAppSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC67947A1BA7953260CB9DB2 /* Pods-BasicAppSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicAppSwift.debug.xcconfig"; path = "Target Support Files/Pods-BasicAppSwift/Pods-BasicAppSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		D6C8DDCEA4C3FC31F4F7F5B4 /* Pods-BasicAppSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicAppSwift.release.xcconfig"; path = "Target Support Files/Pods-BasicAppSwift/Pods-BasicAppSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				214C6D1626EB70F200812F21 /* AppDelegate.swift */,
+				214C6E9026EC7C6500812F21 /* BoostDelegate.swift */,
 				214C6D1A26EB70F200812F21 /* ViewController.swift */,
 				214C6E7026EB7E6000812F21 /* Flutter */,
 				214C6D1C26EB70F200812F21 /* Main.storyboard */,
@@ -75,6 +82,9 @@
 		214C6E7026EB7E6000812F21 /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
+				214C6EA026EC82B500812F21 /* TestViewController.h */,
+				214C6EA126EC82B500812F21 /* TestViewController.m */,
+				214C6E9F26EC82B400812F21 /* BasicAppSwift-Bridging-Header.h */,
 			);
 			path = Flutter;
 			sourceTree = "<group>";
@@ -130,6 +140,7 @@
 				TargetAttributes = {
 					214C6D1226EB70F200812F21 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -190,7 +201,7 @@
 			name = "[CP-User] Run Flutter Build BasicAppFlutter Script";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../BasicAppFlutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../BasicAppFlutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build\n";
 		};
 		C68C0096722D73C43FBB3F6A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -222,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				214C6D1B26EB70F200812F21 /* ViewController.swift in Sources */,
+				214C6E9126EC7C6500812F21 /* BoostDelegate.swift in Sources */,
+				214C6EA226EC82B500812F21 /* TestViewController.m in Sources */,
 				214C6D1726EB70F200812F21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 45YZ93PQ7G;
@@ -383,6 +397,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kun.BasicAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Autopai_Any;
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicAppSwift/Flutter/BasicAppSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 45YZ93PQ7G;
@@ -407,6 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kun.BasicAppSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Autopai_Any;
+				SWIFT_OBJC_BRIDGING_HEADER = "BasicAppSwift/Flutter/BasicAppSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
